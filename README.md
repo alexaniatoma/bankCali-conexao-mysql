@@ -10,6 +10,6 @@ Padrão Factory tem como objetivo principal nos auxiliar a reduzir o acoplamento
 A Factory Pattern é um padrão reconhecido e útil em vários contextos. Na API Java, encontramos vários exemplos do Factory Pattern, como o Calender.getInstance() ou Integer.valueOf("3").
 
 POOL de conexões - recurso do banco de dados onde podemos definir um determinado número de conexões. 
-Para escalar conexões, é possível utilizar um poll, no qual será aberta uma quantidade configurável de conexões que serão reaproveitadas.
+Para escalar conexões, é possível utilizar um poll, no qual será aberta uma quantidade configurável de conexões que serão reaproveitadas entre os clientes. O Pool utilizado na palicação é o HikaniCP.
 
 Foi realizado o delete lógico, com o qual não apagamos o dado do banco e só informamos se a conta está ativa ou não. Caso esteja ativa o valor é retornado na pesquisa, caso contrários não retornará.
